@@ -1,5 +1,6 @@
-import Card from './components/Card';
+import Card from './components/Counter';
 import './App.css'
+import Counter from './components/Counter';
 
 function App() {
   const items = ["React", "JavaScript", "Vite"];
@@ -7,8 +8,7 @@ function App() {
   return (
     <section>
       <h1>!Hola mundo!</h1>
-      <Card title="Título de la tarjeta 1" description="Cuerpo de la tarjeta 1" />
-      <Card title="Título de la tarjeta 2" description="Cuerpo de la tarjeta 2" />
+      <Counter />
       <ul>
         {items.map((item) => (
           <li key={item}>{item}</li>
