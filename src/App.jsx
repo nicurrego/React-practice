@@ -1,7 +1,7 @@
-import Card from './components/Counter';
+import NameForm from './components/NameForm';
 import './App.css'
 import Counter from './components/Counter';
-import ToggleButton from './ToggleButton';
+import ToggleButton from './components/ToggleButton';
 
 function App() {
   const items = ["React", "JavaScript", "Vite"];
@@ -9,6 +9,7 @@ function App() {
   return (
     <section>
       <h1>!Hola mundo!</h1>
+      <NameForm />
       <ToggleButton />
       <Counter />
       <ul>
