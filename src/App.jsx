@@ -1,6 +1,6 @@
 import { Children, createContext, useState, useContext } from 'react';
 import './App.css'
-
+import CounterCustomHook from './components/CounterCustomHook/CounterCustomHook';
 const ThemeContext = createContext();
 
 function ThemeProvider({ children }) {
@@ -32,6 +32,7 @@ function App() {
       <ThemeProvider>
         <ThemeButton />
       </ThemeProvider>
+      <CounterCustomHook />
     </>
   )
 }
